@@ -1,0 +1,100 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+ 
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+.form-inline{
+	background: #fff;
+	box-shadow:3px 3px 10x 10px;
+}
+
+.today {
+	overflow: auto;
+	white-space: nowrap;  
+	margin-bottom: 30px;
+	}
+	
+	.today div {
+	display: inline-block;
+	text-align: center;
+	padding: 14px;
+	text-decoration: none;
+	}
+
+.box{
+	margin: 50px;
+	width:400px;
+	height:520px;
+	background-color: blue;
+	display:flex;
+	justify-content: center;
+	align-items: center;
+	border: 5px;
+
+}
+.future div{
+    width: 100%;
+    height: 60px;
+}
+#daily div p{
+  width: 25%;
+  height: 100%;
+  float: left;
+}
+
+
+.humidity div p{
+	width: 50%;
+	height: 100%;
+	float: left;
+  }
+.humidity div >p:last-child{
+	font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  }
+
+  .daily{
+	width: 100%;
+	height: 400px;
+	overflow-y: scroll;
+	
+  }
+  .future div{
+	  width: 100%;
+	  height: 60px;
+  }
+  ::-webkit-scrollbar {
+	display: none;
+	-ms-overflow-style: none;  
+	scrollbar-width: none;
+  }
+  i{
+	font-size: 25px;
+  }
+  .humidity div p{
+	width: 50%;
+	height: 100%;
+	float: left;
+  }
+  .humidity div >p:last-child{
+	font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  }
+
+  @media (max-width: 800px){
+	.daily{
+	  padding-top: 50px;
+	}
+  }
